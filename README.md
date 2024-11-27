@@ -1,8 +1,65 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Boi poka
 
-Currently, two official plugins are available:
+A brief description of what this project does and who it's for
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Live Link
+
+https://boi-poka-akash.surge.sh/
+## npm package
+
+This project is used by the following companies:
+
+| package             | work                                                                |
+| ----------------- | ----------------------------------------------------------------- |
+| react router dom |  router |
+| tailwind |  css |
+| daisy ui | css |
+| react-tabs |  tabs |
+| react-toasty |  toasty |
+
+ 
+
+
+## Features
+
+- local storage
+- sort by rating and page
+- mark as read
+
+
+
+## Used react hook
+
+This project is used by the following companies:
+
+- useState
+- useParams
+- useLoader
+
+
+
+## File Structure
+
+Install my-project with npm
+
+```bash
+  ___
+  |-src-
+        |-components-
+                    |-ErrorPage
+                    |-Footer
+                    |-Navbar
+                    |-Home
+                    |-Root
+```
+    
+## Boi-Poka View
+
+![App Screenshot](https://i.ibb.co.com/t872Kmh/boi-poka.jpg)
+
+![App Screenshot](https://i.ibb.co.com/MVL61MZ/sort-by.jpg)
+
+![App Screenshot](https://i.ibb.co.com/Gd08dcc/book-details.jpg)
+
