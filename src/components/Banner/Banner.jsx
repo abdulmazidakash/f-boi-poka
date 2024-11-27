@@ -9,9 +9,9 @@ const Banner = () => {
 					src={bannerImg}
 					className=" rounded-lg shadow-2xl" />
 					<div className='text-center'>
-					<h1 className="text-5xl font-bold text-center">Box Office News!</h1>
+					<h1 className="text-5xl font-bold text-center">Books to freshen up your bookshelf</h1>
 
-					<button className="btn btn-primary mt-4 bg-gradient-to-r from-emerald-700 to-rose-700 text-center">Get Started</button>
+					<button className="my-8 font-semibold bg-gradient-to-tr from-emerald-400 to-cyan-600 btn text-white text-center ">View The List</button>
 					</div>
 				</div>
 			</div>

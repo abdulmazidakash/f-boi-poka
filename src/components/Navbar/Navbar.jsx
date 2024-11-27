@@ -4,13 +4,13 @@ import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
 
 	const links = <>
-		<NavLink className='font-semibold bg-gradient-to-tr from-emerald-400 to-cyan-600 btn'  to='/'>Home</NavLink>
-		<NavLink className='ml-4 font-semibold bg-gradient-to-tr from-emerald-400 to-cyan-600 btn' to='/dashboard'>Dashboard</NavLink>
-		<NavLink className='ml-4 font-semibold bg-gradient-to-tr from-emerald-400 to-cyan-600 btn' to='/listedBooks'>Listed Books</NavLink>
+		<NavLink className='font-semibold bg-gradient-to-tr from-emerald-400 to-cyan-600 btn text-white'  to='/'>Home</NavLink>
+		<NavLink className='ml-4 font-semibold bg-gradient-to-tr from-emerald-400 to-cyan-600 btn text-white' to='/listedBooks'>Listed Books</NavLink>
+		<NavLink className='ml-4 font-semibold bg-gradient-to-tr from-emerald-400 to-cyan-600 btn text-white' to='/dashboard'>Dashboard</NavLink>
 
 	</>
 	return (
-		<div className="bg-gradient-to-r from-emerald-200 to-red-200 mb-4 rounded-b-lg">
+		<div className="bg-gradient-to-r from-emerald-200 to-red-200 mb-4 rounded-b-lg ">
 			<div className="navbar max-w-6xl mx-auto">
 				<div className="navbar-start">
 					<div className="dropdown">
@@ -34,16 +34,14 @@ const Navbar = () => {
 						{links}
 					</ul>
 					</div>
-					<a className="btn bg-gradient-to-r from-emerald-400 to-green-500 text-xl">Boi-Poka</a>
+					<Link to='/' className="btn bg-gradient-to-r from-emerald-400 to-green-500 text-xl">Boi-Poka</Link>
 				</div>
-				<div className="navbar-center hidden lg:flex">
+				<div className="navbar-end hidden lg:flex">
 					<ul className="menu menu-horizontal px-1 ">
 						{links}
 					</ul>
 				</div>
-				<div className="navbar-end">
-					<a className="btn bg-gradient-to-t from-sky-500 to-yellow-600">Button</a>
-				</div>
+
 				</div>
 		</div>
 	);

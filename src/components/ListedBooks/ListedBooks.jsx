@@ -35,16 +35,16 @@ const ListedBooks = () => {
 
 		//sort rating
 		if(sortType === 'Rating'){
-			const sortedReadList = [...readList].sort((a, b) => a.rating = b.rating);
+			const sortedReadList = [...readList].sort((a, b) => a.rating - b.rating);
 			setReadList(sortedReadList);
 		}
 	}
 	return (
 		<div>
-			<h2>listed books</h2>
+			<h2 className='text-center text-4xl font-extrabold text-green-700 my-8'>listed books</h2>
 
 			<div className="dropdown">
-				<div tabIndex={0} role="button" className="btn m-1">
+				<div tabIndex={0} role="button" className="btn m-1 bg-gradient-to-l from-emerald-600 to-pink-700 font-semibold text-white my-4">
 					{sort ? `${sort}`  : 'Sort by'}
 				</div>
 				<ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
@@ -54,15 +54,15 @@ const ListedBooks = () => {
 			</div>
 
 
-			<Tabs>
+			<Tabs className='font-semibold'>
 				<TabList>
 				<Tab>Read List</Tab>
 				<Tab>Wish List</Tab>
 				</TabList>
 
 				<TabPanel>
-					<h2 className='text-2xl'>Books I Read: {readList.length}</h2>
-					<div className='grid grid-cols-1 md:grid-cols-3 gap-2'>
+					<h2 className='text-2xl btn bg-gradient-to-t from-yellow-600 to-indigo-700 text-white mt-4'>Books I Read: {readList.length}</h2>
+					<div className='grid grid-cols-1 md:grid-cols-3 gap-4 bg-gradient-to-t from-emerald-200 to-orange-100 p-4 rounded-lg my-8'>
 						{
 							readList.map(book => <Book key={book.bookId} book={book}></Book>)
 						}
